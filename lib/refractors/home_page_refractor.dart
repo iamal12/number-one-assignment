@@ -86,3 +86,16 @@ Text productNameHomePage(Product product, double screenWidth) {
           fontSize: screenWidth * .035,
           fontWeight: FontWeight.w600));
 }
+
+Widget buyNowButton(double screenWidth) {
+  return ElevatedButton(
+    onPressed: () {
+    },
+    style: ElevatedButton.styleFrom(
+      primary: Colors.amber,
+    ),
+    child: Text('Buy Now',style: TextStyle(fontSize: screenWidth * .035),),
+  );
+}
+
+

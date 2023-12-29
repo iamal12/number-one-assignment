@@ -86,13 +86,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: SizedBox(
                           // color: Colors.teal,
-                          height: 80,
-                          width: 170,
+                          height: (screenWidth * .4) /2,
+                          width: 190,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               productNameHomePage(product, screenWidth),
-                              productPriceHomePage(product, screenWidth),
                               RatingBarIndicator(
                                 rating: double.parse(
                                     product.rating!.rate.toString()),
@@ -104,11 +103,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: Colors.amber,
                                   );
                                 },
-                              )
+                              ),
+                              productPriceHomePage(product, screenWidth),
+
+
                             ],
                           ),
                         ),
-                      )
+                      ),
+
                     ],
                   ),
                 );
